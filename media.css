@@ -111,27 +111,12 @@
     } 
 
     .curriculum .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 1vh;
 
-        height: 350px;
+        height: 250px;
         width: 350px;
-        padding: 1vh;
-        border-radius: 20px;
-
-        background: transparent;
-        box-shadow: inset 0 0 20px 1px rgb(255, 255, 255, 0.5);
     }
 
-    .holder .about-uni{
-        margin-top: 5vh;
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-    }
 
     /* FUTURE */
     .future-card-holder{ 
