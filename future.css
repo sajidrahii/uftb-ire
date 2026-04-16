@@ -1,0 +1,32 @@
+.future-card-holder{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+
+    gap: 2vw;
+}
+
+.future-card-holder h2{
+    font-size: 12pt;
+}
+
+.future-card-holder .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+    width: 300px;
+    padding: 1vh;
+    border-radius: 20px;
+
+    background: transparent;
+    box-shadow: inset 0 0 20px 1px rgb(255, 255, 255, 0.5);
+}
+
+.future-card-holder img{
+    height: 80px;
+
+    animation: popIn 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}

@@ -1,0 +1,94 @@
+:root{
+    --bg-primary: #060b14;
+    --bg-secondary: #0d1726;
+
+    --white-btn: hsl(0, 0%, 90%);
+    --w-btn-text: hsl(0, 0%, 10%);
+    --btn-hover: hsl(210, 65%, 55%);;
+
+    --primary-text: hsl(0, 0%, 95%);
+    --secondary-text: hsl(0, 0%, 80%);
+
+    --blue-highlight: hsl(210, 65%, 55%);
+}
+
+.holder h3{
+    font-size: 12pt;
+
+    animation: popIn2 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.campus-info{
+    /* background: red; */
+    margin-top: 20px;
+
+    height: 500px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.campus-info .vertical-line{
+    height: 100%;
+    width: 2px;
+    background: var(--blue-highlight);
+}
+
+.campus-info .left-side{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10vh;
+
+    margin-bottom: 100px;
+}
+
+.campus-info .right-side{
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    gap: 10vh;
+}
+
+.campus-info .left-side img{
+    height: 150px;
+    animation: slideInUp 1s ease-out;
+}
+
+.campus-info .right-side img{
+    height: 150px;
+    animation: slideInUp 1.5s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); /* Start completely below its position */
+    opacity: 0;                   /* Optional: fade in at the same time */
+  }
+  to {
+    transform: translateY(0);    /* End at its natural position */
+    opacity: 1;
+  }
+}
+
+@keyframes popIn2 {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

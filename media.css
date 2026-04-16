@@ -1,0 +1,145 @@
+@media (max-width: 650px){
+
+    h1, h2, h3, p{
+        font-family: Roboto, sans-serif;
+        text-align: center;
+    }
+
+    .bg-depth{
+        height: 100vh;
+        width: 110vw;
+        z-index: -1000;
+
+        position: fixed;
+        top: 85vh;
+        border-top-left-radius: 80%;
+        border-top-right-radius: 80%;
+
+        background: var(--bg-primary);
+    }
+
+    .outer-glow{
+        z-index: -2000;
+        position: fixed;
+        top: 60vh; 
+
+        animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }   
+
+    .flare{
+        z-index: -2000;
+        position: fixed;
+
+        top: 120px;
+    }
+
+    .flare img{
+        height: 40px;
+        width: 600px;
+
+        animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }
+
+    /* HEADER */
+    header{
+        width: 90vw;
+
+        position: fixed;
+        top: 30px;
+
+        animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    }
+
+    .navbar{
+        gap: 20px;
+    }
+
+    /* MIDDLE SECTION */
+    .holder{
+        margin-top: 15vh;
+        margin-bottom: 1vh;
+    }
+
+    .counts{ 
+        flex-direction: column;
+
+        gap: 1vh;
+    }
+
+    .counts .card{
+        height: 100px;
+        width: 260px;
+        padding: 1vh;
+    }
+
+    .holder h1{
+        font-size: 18pt; 
+    }
+
+    .holder h2{
+        font-size: 16pt; 
+    }
+
+    .holder h3{
+        font-size: 12pt;
+        color: var(--primary-text);
+    }
+
+    .holder p{
+        font-size: 2vh;  
+    }
+
+    /* CAMPUS */
+
+    .campus-info .vertical-line{
+        height: 60%;
+        width: 2px;
+        background: var(--blue-highlight);
+    }
+
+    .campus-info .left-side img{
+        height: 100px;
+    }
+
+    .campus-info .right-side img{
+        height: 100px;
+    }
+
+    /* CIRRICULUM */
+    .curriculum{ 
+        flex-direction: column; 
+    } 
+
+    .curriculum .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+
+        height: 350px;
+        width: 350px;
+        padding: 1vh;
+        border-radius: 20px;
+
+        background: transparent;
+        box-shadow: inset 0 0 20px 1px rgb(255, 255, 255, 0.5);
+    }
+
+    .holder .about-uni{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    /* FUTURE */
+    .future-card-holder{ 
+        flex-direction: column; 
+        gap: 1vh;
+    }
+
+    .future-card-holder h2{
+        font-size: 12pt;
+    }
+}
