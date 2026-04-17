@@ -35,6 +35,7 @@
     height: 100%;
     width: 2px;
     background: var(--blue-highlight);
+    opacity: 0.5;
 }
 
 .campus-info .left-side{

@@ -40,7 +40,11 @@
         animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     }
 
-    .elements .robo1{
+    .elements{
+        opacity: 0;
+    }
+
+    /* .elements .robo1{
         position: fixed;
         right: 120px;
         top: 660px;
@@ -59,7 +63,7 @@
 
     .elements .robo2 img{
         height: 300px;
-    }
+    } */
 
     /* HEADER */
     header{
