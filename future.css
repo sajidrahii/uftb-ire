@@ -8,7 +8,7 @@
 
 .future-card-holder h2{
     font-size: 12pt;
-}
+} 
 
 .future-card-holder .card{
     display: flex;
@@ -23,6 +23,8 @@
 
     background: transparent;
     box-shadow: inset 0 0 20px 1px rgb(255, 255, 255, 0.5);
+
+    animation: moving 2s ease-in-out infinite;
 }
 
 .future-card-holder img{

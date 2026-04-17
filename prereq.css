@@ -1,20 +1,25 @@
-.curriculum{
+.prereq-card-holder{
     display: flex;   
     align-items: center;
     justify-content: center;
 
-    gap: 0.5vw;
+    gap: 2vw;
+}
+
+.prereq-card-holder h2{
+    font-size: 12pt;
 } 
 
-.curriculum .card{
+
+.prereq-card-holder .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1vh;
 
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 300px;
     padding: 1vh;
     border-radius: 20px;
 
@@ -24,6 +29,8 @@
     animation: moving 2s ease-in-out infinite;
 }
 
-.curriculum .card img{
-    height: 100px;
+.prereq-card-holder img{
+    height: 80px;
+
+    animation: popIn 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
 }

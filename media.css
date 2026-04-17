@@ -40,9 +40,31 @@
         animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     }
 
+    .elements .robo1{
+        position: fixed;
+        right: 120px;
+        top: 660px;
+    }
+
+    .elements .robo1 img{
+        height: 100px;
+    }
+
+    .elements .robo2{
+        left: 40px;
+        bottom: 200px;
+
+        animation: none;
+    }
+
+    .elements .robo2 img{
+        height: 300px;
+    }
+
     /* HEADER */
     header{
-        width: 90vw;
+        width: 95vw;
+        height: 80px;
 
         position: fixed;
         top: 30px;
@@ -52,6 +74,10 @@
 
     .navbar{
         gap: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
     }
 
     /* MIDDLE SECTION */
@@ -61,14 +87,15 @@
     }
 
     .counts{ 
-        flex-direction: column;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1vh;
     }
 
     .counts .card{
         height: 100px;
-        width: 260px;
+        width: 180px;
         padding: 1vh;
     }
 
@@ -90,6 +117,9 @@
     }
 
     /* CAMPUS */
+    .campus-info{
+        margin-top: 0;
+    }
 
     .campus-info .vertical-line{
         height: 60%;
@@ -111,10 +141,12 @@
     } 
 
     .curriculum .card{
-        gap: 1vh;
-
-        height: 250px;
+        height: 280px;
         width: 350px;
+    }
+
+    .curriculum .card img{
+        height: 50px;
     }
 
 
@@ -125,6 +157,16 @@
     }
 
     .future-card-holder h2{
+        font-size: 12pt;
+    }
+
+    /* PRE REQ */
+    .prereq-card-holder{ 
+        flex-direction: column; 
+        gap: 1vh;
+    }
+
+    .prereq-card-holder h2{
         font-size: 12pt;
     }
 }
